@@ -32,7 +32,7 @@ public class Main {
         };
 
 
-        people.sort((o1, o2) -> o1.lastName().compareTo(o2.lastName()));
+        people.sort(Comparator.comparing(Person::lastName).thenComparing(Person::firstName));
         System.out.println(people);
 
         interface EnhancedComparator<T> extends Comparator<T> {

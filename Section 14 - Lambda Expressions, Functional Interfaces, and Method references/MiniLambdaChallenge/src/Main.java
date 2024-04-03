@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Using anonymous class
-        Consumer<String> printTheParts = new Consumer<String>() {
+        Consumer<String> printWords= new Consumer<String>() {
             @Override
             public void accept(String sentence) {
                 String[] parts = sentence.split(" ");
@@ -28,7 +28,7 @@ public class Main {
             }
         };
 
-        printTheParts.accept("Let's split this up into an array");
+        printWords.accept("Let's split this up into an array");
         System.out.println("-".repeat(20));
 
         printWordsLambda.accept("Let's split this up into an array");

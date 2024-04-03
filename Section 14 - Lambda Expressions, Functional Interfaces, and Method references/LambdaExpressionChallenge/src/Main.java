@@ -8,6 +8,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+        String ss = "ahmed a";
+        System.out.println( ss.substring(ss.lastIndexOf(" ")));
+
         String[] names = {"Anna", "Bob", "Carole", "David", "Ed", "Fred", "Gary"};
 
         Arrays.setAll(names, i -> names[i].toUpperCase());
